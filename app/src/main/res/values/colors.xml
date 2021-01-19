@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorSecondary">#6BBF59</color>
+    <color name="colorSecondaryDark">#08A045</color>
+
+    <color name="colorAccent">#DDB771</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightGrey">#FAFAFA</color>
+    <color name="colorGrey">#EEEEEE</color>
+    <color name="colorDarkGrey">#BDBDBD</color>
+    <color name="colorYellow">#FFC300 </color>
+<color name="facebook_color">#3b5998</color>
+    <color name="colorPrimarySet2">#FF6633</color>
+    <color name="colorSecondarySet2">#FF9900</color>
+    <color name="colorAccentSet2">#B97441</color>
+    <color name="colorPrimaryDark2">#FF4500</color>
+
+    <color name="colorPrimarySet3">#3333CC</color>
+    <color name="colorSecondarySet3">#3366FF</color>
+    <color name="colorAccentSet3">#8AD8ED</color>
+    <color name="colorPrimaryDark3">#000080</color>
+
+    <color name="colorPrimarySet4">#970606</color>
+    <color name="colorSecondarySet4">#CC0000</color>
+    <color name="colorAccentSet4">#FACCAD</color>
+    <color name="colorPrimaryDark4">#660033</color>
+
+    <color name="selector_choice_state">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:color="@color/colorSecondary" android:state_checked="true" />
+            <item android:color="@color/colorWhite" android:state_checked="false" />
+            <item android:color="@color/colorWhite" />
+        </selector>
+    </color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#6BBF59</color>
+
+
+
+
+</resources>

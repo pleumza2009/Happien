@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "216257063832",
+    "firebase_url": "https://happiens-d1b51.firebaseio.com",
+    "project_id": "happiens-d1b51",
+    "storage_bucket": "happiens-d1b51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216257063832:android:4c6df24a067633b37059ed",
+        "android_client_info": {
+          "package_name": "com.example.happiens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216257063832-dnlv1muotpoel86dtabg6dk4jqrkcodk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.happiens",
+            "certificate_hash": "dcc41fb9cc230b092706053f394571cdde3d43c5"
+          }
+        },
+        {
+          "client_id": "216257063832-svsm37sf360961h43q08g2onterkmabq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV-iHbtCUg1noSwZb1hzs7o7pqXNjvXgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216257063832-svsm37sf360961h43q08g2onterkmabq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

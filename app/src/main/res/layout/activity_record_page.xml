@@ -1,0 +1,481 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                            android:id="@+id/todayDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:text="Date"
+                            android:textSize="30sp" />
+
+                    <View
+                            android:id="@+id/divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="?attr/colorPrimary" />
+
+                    <TextView
+                            android:id="@+id/todayTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingTop="10dp"
+                            android:text="00:00"
+                            android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!--<RadioGroup
+                    android:id="@+id/actRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+                <RadioButton
+                        android:id="@+id/actRadioBtn1"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/radio_btn_selector"
+                        android:button="@null"
+                        android:drawableTop="@drawable/ic_running_black_24dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Running"
+                        android:textSize="12sp" />
+
+                <RadioButton
+                        android:id="@+id/actRadioBtn2"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/radio_btn_selector"
+                        android:button="@null"
+                        android:drawableTop="@drawable/ic_dining_black_24dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Dining"
+                        android:textSize="12sp" />
+
+                <RadioButton
+                        android:id="@+id/actRadioBtn3"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/radio_btn_selector"
+                        android:button="@null"
+                        android:drawableTop="@drawable/ic_shopping_black_24dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Shopping"
+                        android:textSize="12sp" />
+
+                <RadioButton
+                        android:id="@+id/actRadioBtn4"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/radio_btn_selector"
+                        android:button="@null"
+                        android:drawableTop="@drawable/ic_gardening_black_24dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Gardening"
+                        android:textSize="12sp" />
+
+            </RadioGroup>-->
+
+            <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:chipSpacingHorizontal="8dp"
+                    app:chipSpacingVertical="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+                    app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh1"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Eating"
+                        app:chipIcon="@drawable/ic_baseline_eating_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh2"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Cooking"
+                        app:chipIcon="@drawable/ic_baseline_cooking_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh3"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Shopping"
+                        app:chipIcon="@drawable/ic_baseline_shopping_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh4"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Watching"
+                        app:chipIcon="@drawable/ic_baseline_watching_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh5"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Reading"
+                        app:chipIcon="@drawable/ic_baseline_reading_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh6"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Listening"
+                        app:chipIcon="@drawable/ic_baseline_listening_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh7"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Singing"
+                        app:chipIcon="@drawable/ic_baseline_singing_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh8"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Gaming"
+                        app:chipIcon="@drawable/ic_baseline_gaming_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh11"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Traveling"
+                        app:chipIcon="@drawable/ic_baseline_traveling_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh12"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Photography"
+                        app:chipIcon="@drawable/ic_baseline_photography_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh13"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Arts and Crafts"
+                        app:chipIcon="@drawable/ic_baseline_arts_and_crafts_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh9"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Exercise"
+                        app:chipIcon="@drawable/ic_baseline_exercise_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh10"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Play Sports"
+                        app:chipIcon="@drawable/ic_baseline_play_sports_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+                <com.google.android.material.chip.Chip
+                        android:id="@+id/actChipCh14"
+                        style="@style/CustomChipChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Playing with Pet"
+                        app:chipIcon="@drawable/ic_baseline_playing_with_pet_24"
+                        app:chipIconEnabled="true"
+                        app:chipIconTint="@color/icon_chip_state_list"
+                        app:chipMinHeight="40dp"
+                        app:chipStartPadding="8dp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/chipGroup">
+
+                <TextView
+                        android:id="@+id/textViewSeekBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textSize="30dp" />
+
+                <SeekBar
+                        android:id="@+id/moodSeekbar"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:max="100"
+                        android:minWidth="0dp"
+                        android:padding="12dp"
+                        android:progress="0"
+                        android:progressBackgroundTint="?attr/colorPrimaryDark"
+                        android:progressTint="?attr/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+                    >
+
+                <com.google.android.material.textfield.TextInputLayout
+                        app:boxStrokeColor="?attr/colorPrimaryDark"
+                        android:id="@+id/altLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="?attr/colorPrimaryDark"
+                        >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/altEditText"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Write something about this activity!"
+                            android:inputType="text"
+                            android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                <ImageButton
+                        android:id="@+id/btnAddMediaFromDevice"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/circle_unselected"
+                        android:src="@drawable/ic_baseline_attach_file_24"
+                        android:tint="?attr/colorPrimaryDark"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                        android:id="@+id/btnClearSelectedPicture"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/circle_unselected"
+                        android:src="@drawable/ic_clear_black_24dp"
+                        android:tint="?attr/colorPrimaryDark"
+                        app:layout_constraintStart_toEndOf="@+id/btnAddMediaFromDevice"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                        android:id="@+id/displaySelectedImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="330dp"
+                        android:maxHeight="330dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnAddMediaFromDevice"
+                        app:srcCompat="@drawable/background_darkgrey" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageButton
+                    android:id="@+id/btnSaveRecord"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/circle_button"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_check_white_48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

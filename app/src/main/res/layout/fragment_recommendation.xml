@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="192dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:srcCompat="@drawable/happiens_03" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                        android:id="@+id/chatWelcome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/chat_bubble"
+                        android:padding="16dp"
+                        android:text="Good Morning! I hope today is a good day!" />
+
+                <TextView
+                        android:id="@+id/chatMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/profileChatImage"
+                        android:background="@drawable/chat_bubble"
+                        android:padding="16dp"
+                        android:text="Your Recommended Activity is:"
+                        android:textStyle="normal|bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/recommendActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/chat_bubble"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                    <ImageView
+                            android:id="@+id/podiumRankIcon1"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/circle_unselected"
+                            android:padding="15dp"
+                            android:src="@drawable/ic_baseline_eating_24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                            android:id="@+id/actRecName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="Eating"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/podiumRankIcon1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                        android:id="@+id/chatMessage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/profileChatImage"
+                        android:background="@drawable/chat_bubble"
+                        android:padding="16dp"
+                        android:text="Find more about this activity:" />
+
+                <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:chipSpacingHorizontal="8dp"
+                        app:chipSpacingVertical="8dp">
+
+                    <com.google.android.material.chip.Chip
+                            android:id="@+id/buttonToOpenMap1"
+                            style="@style/Widget.MaterialComponents.Chip.Action"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Search Map 1"
+                            android:textColor="?attr/colorPrimary"
+                            app:chipBackgroundColor="@color/colorWhite"
+                            app:chipIcon="@drawable/ic_baseline_map_24"
+                            app:chipIconTint="?attr/colorPrimary"
+                            app:chipMinHeight="40dp"
+                            app:chipStartPadding="8dp"
+                            app:chipStrokeColor="?attr/colorPrimary"
+                            app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                            android:id="@+id/buttonToOpenMap2"
+                            style="@style/Widget.MaterialComponents.Chip.Action"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Search Map 2"
+                            android:textColor="?attr/colorPrimary"
+                            app:chipBackgroundColor="@color/colorWhite"
+                            app:chipIcon="@drawable/ic_baseline_map_24"
+                            app:chipIconTint="?attr/colorPrimary"
+                            app:chipMinHeight="40dp"
+                            app:chipStartPadding="8dp"
+                            app:chipStrokeColor="?attr/colorPrimary"
+                            app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                            android:id="@+id/buttonToOpenMap3"
+                            style="@style/Widget.MaterialComponents.Chip.Action"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Search Map 3"
+                            android:textColor="?attr/colorPrimary"
+                            app:chipBackgroundColor="@color/colorWhite"
+                            app:chipIcon="@drawable/ic_baseline_map_24"
+                            app:chipIconTint="?attr/colorPrimary"
+                            app:chipMinHeight="40dp"
+                            app:chipStartPadding="8dp"
+                            app:chipStrokeColor="?attr/colorPrimary"
+                            app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                            android:id="@+id/buttonToOpenBrowser1"
+                            style="@style/Widget.MaterialComponents.Chip.Action"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Search Browser 1"
+                            android:textColor="?attr/colorPrimary"
+                            app:chipBackgroundColor="@color/colorWhite"
+                            app:chipIcon="@drawable/ic_baseline_search_24"
+                            app:chipIconTint="?attr/colorPrimary"
+                            app:chipMinHeight="40dp"
+                            app:chipStartPadding="8dp"
+                            app:chipStrokeColor="?attr/colorPrimary"
+                            app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                            android:id="@+id/buttonToOpenBrowser2"
+                            style="@style/Widget.MaterialComponents.Chip.Action"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Search Browser 1"
+                            android:textColor="?attr/colorPrimary"
+                            app:chipBackgroundColor="@color/colorWhite"
+                            app:chipIcon="@drawable/ic_baseline_search_24"
+                            app:chipIconTint="?attr/colorPrimary"
+                            app:chipMinHeight="40dp"
+                            app:chipStartPadding="8dp"
+                            app:chipStrokeColor="?attr/colorPrimary"
+                            app:chipStrokeWidth="1dp" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                        android:id="@+id/chatBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/chat_bubble"
+                        android:padding="16dp"
+                        android:text="Try to record an activity and come back to see the new Recommended Activity!" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

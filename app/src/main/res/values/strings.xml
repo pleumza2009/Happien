@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Happiens</string>
+    <string name="title_history">History</string>
+    <string name="title_result">Result</string>
+    <string name="title_record">Record</string>
+    <string name="title_recommendation">Recommendation</string>
+    <string name="title_setting">Setting</string>
+    <string name="btn_start_record">Start Record!</string>
+
+    <string name="facebook_app_id">3072068962851552</string>
+    <string name="fb_login_protocol_scheme">fb3072068962851552</string>
+    <string name="averagedailyhappychart">Happiness By Day</string>
+    <string name="act">Activity</string>
+    <string name="cunt">Count</string>
+    <string name="recorded">Recorded</string>
+    <string name="top">Top</string>
+    <string name="rating">Rating</string>
+    <string name="mood">Avg mood</string>
+    <string name="numact">Date</string>
+    <string name="daily_recorded">Last recorded</string>
+    <string name="top_recorded_activity_detail">Top Record Activity Detail</string>
+    <string name="top_actvity">Ranking Happiness Activity</string>
+    <string name="month">Month</string>
+    <string name="date">Date</string>
+    <string name="act2">Act2</string>
+    <string name="_2">2</string>
+    <string name="countActivityNumber">1</string>
+    <string name="act1">Act1</string>
+    <string name="_3">3</string>
+    <string name="rank2">Rank2 :</string>
+    <string name="rank5">Rank5:</string>
+    <string name="scorerank1">Score :</string>
+    <string name="scorerank2">Score :</string>
+    <string name="scorerank3">Score :</string>
+    <string name="rank4">Rank4 :</string>
+    <string name="rank3">Rank3 :</string>
+    <string name="scorerank4">Score :</string>
+    <string name="rank1">Rank1 :</string>
+    <string name="score">Score :</string>
+    <string name="act3">Act3</string>
+    <string name="week">WEEK</string>
+    <string name="month23">MONTH</string>
+    <string name="todo">TODO</string>
+    <string name="cooking">Cooking</string>
+    <string name="_1">1</string>
+
+
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+</resources>

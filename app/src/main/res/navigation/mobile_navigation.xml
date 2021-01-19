@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/navigation_history">
+
+    <fragment
+            android:id="@+id/navigation_history"
+            android:name="com.example.happiens.ui.history.HistoryFragment"
+            android:label="History"
+            tools:layout="@layout/fragment_history"/>
+
+    <fragment
+            android:id="@+id/navigation_result"
+            android:name="com.example.happiens.ui.result.ResultFragment"
+            android:label="Result"
+            tools:layout="@layout/fragment_result"/>
+
+    <fragment
+            android:id="@+id/navigation_record"
+            android:name="com.example.happiens.ui.record.RecordFragment"
+            android:label="Record"
+            tools:layout="@layout/fragment_record"/>
+
+    <fragment
+            android:id="@+id/navigation_recommendation"
+            android:name="com.example.happiens.ui.recommendation.RecommendationFragment"
+            android:label="Recommendation"
+            tools:layout="@layout/fragment_recommendation"/>
+
+    <fragment
+            android:id="@+id/navigation_setting"
+            android:name="com.example.happiens.ui.setting.SettingFragment"
+            android:label="Setting"
+            tools:layout="@layout/fragment_setting"/>
+</navigation>
