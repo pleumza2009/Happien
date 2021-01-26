@@ -13,9 +13,22 @@ I use this project for present my skills and experience only !
 
 #### History
 ![image](https://raw.githubusercontent.com/pleumza2009/Happien/master/picture/History.jpg)
+<br/>
+ Able to view activities that have been recorded Including being able to edit and delete recorded activities
+<br/>
 #### Result
 ![image](https://raw.githubusercontent.com/pleumza2009/Happien/master/picture/Result.jpg)
+<br/>
+Users can see the happy average. The activities that made me the happiest And see how much activity can be recorded You can choose to view data by the latest month and week.
+<br/>
 #### Record
 ![image](https://raw.githubusercontent.com/pleumza2009/Happien/master/picture/Record.jpg)
+<br/>
+Able to record the desired activity data You can choose the activities that you want to record the level of happiness. And accompanying pictures 
+<br/>
 #### Recommendation
 ![image](https://raw.githubusercontent.com/pleumza2009/Happien/master/picture/Recommendation.jpg)
+<br/>
+Users will be advised of new activities that were never performed based on the logged user of the activity similar to the recommended user. They will also be referred to Google Search Engine and Google Map Nearby Place for additional activity-related information or locations.
+
+<br/>
