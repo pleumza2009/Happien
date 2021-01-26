@@ -12,6 +12,10 @@ This Application is copyrighted by king mongkut's university of technology thonb
 I use this project for present my skills and experience only !
 
 #### History
+![image](https://raw.githubusercontent.com/pleumza2009/Happien/master/picture/History.jpg)
 #### Result
+![image](https://raw.githubusercontent.com/pleumza2009/Happien/master/picture/Result.jpg)
 #### Record
+![image](https://raw.githubusercontent.com/pleumza2009/Happien/master/picture/Record.jpg)
 #### Recommendation
+![image](https://raw.githubusercontent.com/pleumza2009/Happien/master/picture/Recommendation.jpg)
